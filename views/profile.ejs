@@ -1,0 +1,10 @@
+<% if (typeof loggedInUser !== 'undefined') { %>
+	<%- include("partials/header.ejs") %>
+			<title><%= loggedInUser %> %> Profile</title>
+		</head>
+		<body>
+			<h1>Hey there <%= loggedInUser %>, you are authenticated</h1>
+		</body>
+		<a href="/logout">Logout</a>
+	</html>
+<% } %>

@@ -1,0 +1,242 @@
+* {
+  font-family: "Spectral", serif;
+}
+
+body {
+  background-color: #9c73ab;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+#home-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#side-title {
+  width: 40vw;
+  max-width: 40vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 2.5em;
+  color: white;
+}
+
+#side-title h1 {
+  font-size: 6em;
+  font-weight: 500;
+}
+
+#side-title p {
+  font-size: 1.25rem;
+}
+
+#side-title p:nth-child(2) {
+  margin: 0 0 10px 0;
+}
+
+#side-title p:nth-child(4) {
+  padding: 3px 0;
+}
+
+#side-title .button {
+  text-decoration: none;
+  background-color: #9c73ab;
+  color: white;
+  border: white solid 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+  padding: 5px 25px;
+  border-radius: 10px;
+}
+
+#img-container {
+  width: 60vw;
+  max-width: 60vw;
+  height: 100vh;
+  max-height: 100vh;
+  position: relative;
+  background-image: url("/client/images/CurveSVG.svg");
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-size: 50vw;
+}
+
+#img-container #hotel-svg {
+  position: absolute;
+  width: 65%;
+  right: 0;
+  bottom: 0;
+}
+
+#input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+#login-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  max-height: 100vh;
+}
+
+#login-modal #logo img {
+  width: 12em;
+}
+
+#login-modal form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+
+#login-modal form input {
+  margin: 20px 0;
+  padding: 10px 10px;
+  border: 1px solid #9c73ab;
+  border-radius: 5px;
+}
+
+#login-modal form button {
+  width: 50%;
+  background-color: white;
+  color: #9c73ab;
+  border: none;
+  border: 2px solid #9c73ab;
+  border-radius: 25px;
+  font-size: 1.5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#register-modal {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  max-height: 100vh;
+}
+
+#register-modal #logo img {
+  width: 10em;
+}
+
+#register-modal form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+
+#register-modal form .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7.5px 0;
+}
+
+#register-modal form .inputs label {
+  padding-bottom: 5px;
+}
+
+#register-modal form .inputs input {
+  padding: 7.5px 10px;
+  border: 1px solid #9c73ab;
+  border-radius: 5px;
+}
+
+#register-modal form #tandc-checkbox {
+  padding: 10px 0;
+}
+
+#register-modal form button {
+  width: 50%;
+  background-color: white;
+  color: #9c73ab;
+  border: none;
+  border: 2px solid #9c73ab;
+  border-radius: 25px;
+  font-size: 1.5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#pic-container {
+  background-image: url("/client/images/UserSVGPattern.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 40%;
+  min-width: 40%;
+}
+
+.errors {
+  color: #ad1f1f;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+#flash-error {
+  background-color: #ffb3b3;
+  color: #d62e2e;
+  border: 1px solid #d98c8c;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,71 @@
+<%- include("partials/header.ejs") %> 
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="input-container">
+			<div id="pic-container"></div>
+			<div id="register-modal"> 
+				<div id="logo">
+					<img src="/client/images/Plane.jpg" alt="" srcset="">
+				</div>      
+				<% if (typeof errors !== 'undefined') { %>
+					<% errors.forEach(x => { %>
+						<div class="errors"><%= x.msg %></div>
+					<% }) %>
+				<% } %>
+					<form action="/register" method="post">
+						<div class="inputs">
+							<label for="username">Username</label>
+							<input
+								type="text"
+								name="username"
+								id="username"
+								placeholder="Enter your username"
+								value="<%= typeof errors !== 'undefined' ? username:''%>" 
+							/>
+						</div>
+						<div class="inputs">
+							<label for="email">E-mail Address</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Enter your e-mail"
+								value="<%= typeof errors !== 'undefined' ? email:''%>" 
+	
+							/>
+						</div>
+						<div class="inputs">
+							<label for="password">Password</label>
+							<input
+								type="password"
+								name="password"
+								id="password"
+								placeholder="Enter your password"
+								value="" 
+	
+							/>
+						</div>
+						<div class="inputs">
+							<label for="password2">Confirm your password</label>
+							<input
+								type="password"
+								name="password2"
+								id="password2"
+								placeholder="Enter your password"
+							/>
+						</div>
+					
+						<div id="tandc-checkbox">
+							<input
+							type="checkbox"
+							name="confirm"
+							id="confirm"
+							/>
+							<label for="confirm">By ticking this box, you have accepted the terms and conditions</label>
+						</div>
+						<button type="submit">Sign up</button>
+					</form>
+					<a href="/login">Have an account? Sign in here</a>
+	</body>
+</html>
